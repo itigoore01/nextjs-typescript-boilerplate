@@ -1,3 +1,5 @@
+[![Test](https://github.com/itigoore01/nextjs-typescript-boilerplate/actions/workflows/test.yml/badge.svg)](https://github.com/itigoore01/nextjs-typescript-boilerplate/actions/workflows/test.yml)
+
 # NextJS Typescript Boilerplate
 
 Bootstrap a developer-friendly NextJS app configured with:
@@ -7,6 +9,9 @@ Bootstrap a developer-friendly NextJS app configured with:
 - Formatting with [Prettier](https://prettier.io/)
 - Linting, typechecking and formatting on by default using [`husky`](https://github.com/typicode/husky) for commit hooks
 - Testing with [Jest](https://jestjs.io/) and [`react-testing-library`](https://testing-library.com/docs/react-testing-library/intro)
+- [Tailwind CSS](https://tailwindcss.com/)
+- Automated dependency updates with [Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate/)
+- Continuous integration with [Github Actions](https://github.co.jp/features/actions)
 
 ## Preview
 
