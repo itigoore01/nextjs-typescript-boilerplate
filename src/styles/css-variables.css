@@ -1,0 +1,11 @@
+:root {
+  --text-default: theme('colors.gray.900');
+  --text-secondary: theme('colors.gray.700');
+  --bg-default: theme('colors.white');
+}
+
+:root.dark {
+  --text-default: theme('colors.white');
+  --text-secondary: theme('colors.gray.300');
+  --bg-default: theme('colors.gray.900');
+}

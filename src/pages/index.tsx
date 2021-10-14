@@ -1,8 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from 'next/head';
 
 export const Home = (): JSX.Element => (
-  <div className="container">
+  <div className="container mx-auto">
     <Head>
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
@@ -19,7 +18,7 @@ export const Home = (): JSX.Element => (
 
       <button
         onClick={() => {
-          window.alert('With typescript and Jest')
+          window.alert('With typescript and Jest');
         }}
       >
         Test Button
@@ -61,7 +60,6 @@ export const Home = (): JSX.Element => (
         rel="noopener noreferrer"
       >
         Powered by{' '}
-        <Image src="/vercel.svg" alt="Vercel Logo" height={'32'} width={'64'} />
       </a>
     </footer>
 
@@ -206,6 +204,6 @@ export const Home = (): JSX.Element => (
       }
     `}</style>
   </div>
-)
+);
 
-export default Home
+export default Home;
