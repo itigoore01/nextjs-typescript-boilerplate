@@ -1,7 +1,13 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
-  "extends": ["eslint:recommended", "prettier"],
+  "plugins": ["@typescript-eslint", "testing-library"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "next/core-web-vitals"
+  ],
   "env": {
     "es6": true,
     "browser": true,
@@ -14,33 +20,26 @@
     }
   },
   "rules": {
-    "no-console": [
+    "react/react-in-jsx-scope": 0,
+    "react/display-name": 0,
+    "react/prop-types": 0,
+    "@typescript-eslint/no-unused-vars": [
       2,
       {
-        "allow": ["warn", "error"]
+        "argsIgnorePattern": "^_"
       }
     ]
   },
   "overrides": [
+    // Only uses Testing Library lint rules in test files
     {
-      "files": ["*.ts", "*.tsx"],
+      "files": ["**/?(*.)+(spec|test).[jt]s?(x)"],
       "extends": [
         "eslint:recommended",
-        "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
-        "prettier"
-      ],
-      "rules": {
-        "react/react-in-jsx-scope": 0,
-        "react/display-name": 0,
-        "react/prop-types": 0,
-        "@typescript-eslint/no-unused-vars": [
-          2,
-          {
-            "argsIgnorePattern": "^_"
-          }
-        ]
-      }
+        "prettier",
+        "plugin:testing-library/react"
+      ]
     }
   ]
 }
