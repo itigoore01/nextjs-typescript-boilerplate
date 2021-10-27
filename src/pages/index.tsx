@@ -1,6 +1,7 @@
+import { NextPage } from 'next';
 import Head from 'next/head';
 
-export const Home = (): JSX.Element => (
+export const Home: NextPage = () => (
   <div className="container mx-auto">
     <Head>
       <title>Create Next App</title>
